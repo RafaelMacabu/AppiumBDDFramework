@@ -10,7 +10,7 @@ public class GlobalParams {
         return adbTimeout;
     }
 
-    public void setAdbTimeout(String adbTimeout) {
+    public static void setAdbTimeout(String adbTimeout) {
         GlobalParams.adbTimeout = adbTimeout;
     }
 
@@ -43,7 +43,7 @@ public class GlobalParams {
         params.setPlatformName(System.getProperty("platformName","android"));
         params.setUdid(System.getProperty("udid","291d97f2"));
         params.setAutomationName(System.getProperty("androidAutomationName","UiAutomator2"));
-        params.setAdbTimeout(System.getProperty("adbTimeout","600000"));
+        params.setAdbTimeout(System.getProperty("adbTimeout","600"));
     }
 
 

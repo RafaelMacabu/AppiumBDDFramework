@@ -1,0 +1,21 @@
+2023-06-28 04:40:55:124 [Appium] Welcome to Appium v2.0.0-beta.71
+2023-06-28 04:40:55:127 [Appium] Non-default server args:
+2023-06-28 04:40:55:130 [Appium] { port: 24504, sessionOverride: true }
+2023-06-28 04:40:55:130 [Appium] Attempting to load driver uiautomator2...
+2023-06-28 04:40:55:132 [Appium] Requiring driver at C:\Users\Rafael\.appium\node_modules\appium-uiautomator2-driver
+2023-06-28 04:40:57:435 [Appium] Appium REST http interface listener started on 0.0.0.0:24504
+2023-06-28 04:40:57:435 [Appium] Available drivers:
+2023-06-28 04:40:57:435 [Appium]   - uiautomator2@2.24.1 (automationName 'UiAutomator2')
+2023-06-28 04:40:57:436 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2023-06-28 04:40:57:887 [HTTP] --> GET /status
+2023-06-28 04:40:57:887 [HTTP] {}
+2023-06-28 04:40:57:889 [AppiumDriver@6f7f] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 04:40:57:892 [AppiumDriver@6f7f] Responding to client with driver.getStatus() result: {"build":{"version":"2.0.0-beta.71"}}
+2023-06-28 04:40:57:982 [HTTP] <-- GET /status 200 50 ms - 47
+2023-06-28 04:40:57:983 [HTTP] 
+2023-06-28 04:40:57:997 [HTTP] --> GET /status
+2023-06-28 04:40:57:997 [HTTP] {}
+2023-06-28 04:40:57:998 [AppiumDriver@6f7f] Calling AppiumDriver.getStatus() with args: []
+2023-06-28 04:40:57:998 [AppiumDriver@6f7f] Responding to client with driver.getStatus() result: {"build":{"version":"2.0.0-beta.71"}}
+2023-06-28 04:40:58:000 [HTTP] <-- GET /status 200 2 ms - 47
+2023-06-28 04:40:58:000 [HTTP] 
