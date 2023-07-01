@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class DriverManager {
-    private static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
 
     public AppiumDriver getDriver(){
         return driver.get();
@@ -18,21 +18,10 @@ public class DriverManager {
     }
 
     public void initializeDriver() throws IOException {
-        AppiumDriver driver = null;
-        GlobalParams params = new GlobalParams();
-        PropertyManager props = new PropertyManager();
-
-        if(driver == null){
-            try {
-                driver = new AndroidDriver(new ServerManager().getServer().getUrl(),new CapabilitiesManager().getCapabilities());
-                this.driver.set(driver);
-            }catch (Exception e){
-                e.printStackTrace();
-                throw e;
-
-            }
+                driver.set(
+                        new AndroidDriver(new ServerManager().getServer().getUrl(),new CapabilitiesManager().getCapabilities()));
 
 
         }
     }
-}
+

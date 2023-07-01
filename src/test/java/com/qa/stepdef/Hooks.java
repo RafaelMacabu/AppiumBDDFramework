@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Hooks {
 
-    @Before
+    /*@Before
     public void initialize() throws IOException {
         GlobalParams params = new GlobalParams();
         params.initializeGlobalParams();
@@ -31,6 +31,6 @@ public class Hooks {
             serverManager.getServer().stop();
         }
 
-    }
+    }*/
 
 }

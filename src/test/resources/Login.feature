@@ -1,6 +1,5 @@
-
+@Test
 Feature: Login Scenarios
-
 
   Scenario Outline: Trying to log in with an invalid username
     When I enter the username "<username>"
@@ -10,6 +9,7 @@ Feature: Login Scenarios
     Examples:
       | username         | password     | error                                                        |
       | invalid_username | secret_sauce | Username and password do not match any user in this service. |
+
 
   Scenario Outline: Trying to log in with an invalid password
     When I enter the username "<username>"

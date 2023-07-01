@@ -1,4 +1,4 @@
-@Test
+
 Feature: Product Scenarios
 
   Scenario Outline: Validate product info on Products page
